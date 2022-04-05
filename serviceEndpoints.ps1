@@ -23,7 +23,7 @@ $vnet = New-AzVirtualNetwork `
   -Subnet $workloadSubnet
 
 #Create VM
-New-AzVM -Name $vmName `
+New-AzVM -Name "vm-0a" `
     -ResourceGroupName $rg `
     -Location $region `
     -Size 'Standard_B1s' `
